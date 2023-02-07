@@ -31,6 +31,7 @@ public class BootsTrapApp implements CommandLineRunner {
 
         samba.getBooks().add(snb);
         snb.getAuthors().add(samba);
+        publisher.getBooks().add(snb);
 
         authorRepository.save(samba);
         bookRepository.save(snb);
